@@ -1,0 +1,98 @@
+\documentclass[a4paper,12pt]{report} % 定义文档类型
+
+% 中文支持及其他常用包
+\usepackage[UTF8]{ctex} % 中文支持
+\usepackage{geometry} % 页面边距设置
+\geometry{left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
+\usepackage{graphicx} % 插入图片
+\usepackage{amsmath} % 数学公式
+\usepackage{hyperref} % 超链接
+\usepackage{fancyhdr} % 页眉页脚
+\usepackage{titlesec} % 控制标题格式
+\usepackage{listings} % 插入代码
+\usepackage{setspace} % 行距
+\usepackage{xcolor} % 颜色
+\usepackage{enumitem} % 列表格式设置
+
+% 页眉页脚设置
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{1pt} % 页眉下方线条宽度
+\renewcommand{\footrulewidth}{1pt} % 页脚下方线条宽度
+\fancyhead[L]{课程作业报告} % 在页眉左侧显示文本
+\fancyfoot[C]{\thepage} % 在页脚中间显示页码
+
+% 文档开始
+\begin{document}
+
+% 目录页
+\tableofcontents
+\newpage
+
+% 正文部分
+\chapter{标题和章节管理}
+
+\section{一级标题示例}
+这是一级标题的内容。接下来是一个二级标题。
+
+\subsection{二级标题示例}
+这是二级标题的内容。以下展示文本的基本格式化。
+
+\subsubsection{三级标题示例}
+这是三级标题的内容。
+
+\paragraph{四级标题示例}
+这是四级标题的内容。
+
+\chapter{正文文本格式}
+
+\section{文本样式}
+这是一个普通文本。\\
+这是 \textbf{加粗} 的文本。\\
+这是 \textit{斜体} 的文本。\\
+这是 \underline{带下划线} 的文本。\\
+这是 \textcolor{blue}{蓝色} 的文本。
+
+\section{列表}
+
+\subsection{无序列表}
+\begin{itemize}
+    \item 项目1
+    \item 项目2
+    \item 项目3
+\end{itemize}
+
+\subsection{有序列表}
+\begin{enumerate}
+    \item 第一点
+    \item 第二点
+    \item 第三点
+\end{enumerate}
+
+\subsection{描述性列表}
+\begin{description}
+    \item[术语A] 这是术语A的定义。
+    \item[术语B] 这是术语B的定义。
+\end{description}
+
+\chapter{行距和段距控制}
+
+\section{行距控制}
+这是默认行距。\\
+\onehalfspacing
+这是1.5倍行距。\\
+\doublespacing
+这是双倍行距。\\
+\singlespacing
+这是恢复为单倍行距。
+
+\section{段距控制}
+\setlength{\parskip}{1em} % 设置段间距为1em，这段文字之前和之后会有1em的段间距。
+
+\chapter{其他常用操作}
+
+\section{脚注和颜色}
+这是一个带脚注的文本\footnote{这是脚注的内容}，
+还可以改变文本颜色，比如 \textcolor{red}{红色文本}。
+
+\end{document}

@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\lstset{
+  language=C++,                  
+  basicstyle=\ttfamily,          
+  keywordstyle=\color{blue},     
+  commentstyle=\color{gray},     
+  stringstyle=\color{red},       
+  numbers=left,                  
+  numberstyle=\tiny\color{gray}, 
+  stepnumber=1,                  
+  breaklines=true,               
+  frame=single,                  
+  captionpos=b,                  
+  tabsize=2                      
+}
+
+\begin{document}
+
+这是一个 C++ 代码示例：
+
+\begin{lstlisting}[language=C++, caption={C++ 代码示例}]
+#include <iostream>
+using namespace std;
+
+int main() {
+    // 输出 "Hello, World!"
+    cout << "Hello, World!" << endl;
+    return 0;
+}
+\end{lstlisting}
+
+\end{document}
